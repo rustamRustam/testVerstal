@@ -1,0 +1,27 @@
+body {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  font-family: 'Poppins', sans-serif;
+}
+
+.links {
+  position: fixed;
+  left: 10px;
+  top: 10px;
+  background-color: white;
+  opacity: 0.3;
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  gap: 20px;
+}
+
+.links:hover {
+  opacity: 1;
+}
+
+a.link {
+  color: inherit;
+  text-decoration: inherit;
+}

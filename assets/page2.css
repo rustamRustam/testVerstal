@@ -1,0 +1,176 @@
+
+
+.top {
+  height: 782px;
+  background-color: #3A4574;
+  text-align: center;
+  display: flex;
+}
+
+.content {
+  max-width: 784px;
+  text-align: center;
+  margin: auto;
+  position: relative;
+}
+
+.top-title {
+  color: #D3B47F;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 40px;
+  margin-bottom: 20px;
+}
+
+.top-svg {
+  margin-bottom: 26px;
+}
+
+.top-text {
+  color: white;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px;
+  margin-bottom: 30px;
+}
+
+.main {
+  margin-bottom: 80px;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  margin-top: 108px;
+  gap: 30px;
+}
+
+.list-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.list-item:nth-child(even) {
+  flex-direction: row-reverse
+}
+
+.top-title-sub {
+  color: #D3B47F;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 40px;
+  letter-spacing: 5.88px;
+}
+
+.list-item-text-title {
+  color: black;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 88px;
+}
+
+.list-item-text-line {
+  transform: translateX(-50%);
+  height: 2px;
+  width: 108px;
+  background-color: #D3B47F;
+  margin-top: 4px;
+}
+
+.list-item-text-info {
+  max-width: 470px;
+  color: #808080;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+  margin-top: 16px;
+}
+
+.list-item-img {
+  width: 670px;
+  height: 560px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.list-item-img_1 {
+  background-image: url('../img/p2_img1.png');
+}
+
+.list-item-img_2 {
+  background-image: url('../img/p2_img2.png');
+}
+
+.list-item-img_3 {
+  background-image: url('../img/p2_img3.png');
+}
+
+
+@media (max-width: 1200px) {
+  .list-item-img {
+    width: 469px;
+    height: 392px;
+  }
+  .list-item-text-line {
+    transform: translateX(0);
+  }
+}
+
+@media (max-width: 992px) {
+  .list {
+    padding: 0 20px;
+    margin-top: 54px;
+  }
+  .list-item-img {
+    width: 335px;
+    height: 280px;
+  }
+}
+
+@media (max-width: 768px) {
+  .top {
+    height: 500px;
+  }
+  .content {
+    padding: 0 20px;
+  }
+
+  .top-title {
+    font-size: 24px;
+  }
+
+  .top-text {
+    line-height: 24px;
+  }
+
+  .list {
+    gap: 0;
+  }
+
+  .list-item-text-title {
+    font-size: 28px;
+    line-height: 48px;
+  }
+
+  .list-item-text-info {
+    line-height: 24px;
+  }
+
+}
+
+@media (max-width: 576px) {
+  .list {
+    gap: 16px;
+  }
+  .list-item {
+    flex-direction: column !important;
+  }
+}

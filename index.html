@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Test site</title>
+  <base href="./">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- <link rel="icon" type="image/x-icon" href="favicon.ico"> -->
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./assets/styles.css">
+  <link rel="stylesheet" href="./assets/index.css">
+  <link rel="stylesheet" href="./assets/menu.css">
+
+</head>
+
+<body>
+
+  <div class="top">
+    <div class="top-img"></div>
+    <div class="content">
+      <div class="parent-menu">
+        <div class="main-menu">
+          <div class="logo"></div>
+          <div id="button-menu" class="button-menu" onclick="showMenu()">
+            <div class="button-menu-line"></div>
+            <div class="button-menu-line"></div>
+            <div class="button-menu-line"></div>
+          </div>
+          <div id="menu" class="menu">
+            <div id="button-menu-close" class="button-menu-close" onclick="hideMenu(event)">
+              <div class="button-menu-line"></div>
+              <div class="button-menu-line"></div>
+            </div>
+            <div class="menu-item selected">À la carte</div>
+            <div class="menu-item">Wijnkaart</div>
+            <div class="menu-item">Lunchmenu</div>
+            <div class="menu-item">Contact</div>
+          </div>
+
+          <div class="phone">
+            <i class="phone-icon"></i>
+            <span class="phone-number">+32 9 282 57 25</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="parent-title">
+        <div class="title-sub">OPEN EVERYDAY&nbsp;&nbsp;6AM - 9PM</div>
+        <div class="title">A bad day with lunch is better than a good day without it.</div>
+        <div class="title-dop">
+          <div class="title-dop-button" onclick="showModalWindow(event)">
+            <span>Reserve a table</span>
+          </div>
+          <div class="social-media">
+            <div class="social-media-item">Fb</div>
+            <div class="social-media-item">Lg</div>
+            <div class="social-media-item">Tw</div>
+            <div class="social-media-item">Yt</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="main">
+    <div class="content flex-s-sb">
+      <div class="list">
+
+        <div class="list-item">
+          <div class="list-item-title selected">Woensdag 12/01</div>
+          <div class="list-item-sub-title">
+            <span>Salade met Serrano</span>
+            <span class="dots">&bull; &bull; &bull;</span>
+            <span>Steak Tartaar</span>
+          </div>
+        </div>
+
+        <div class="list-item">
+          <div class="list-item-title">Donderdag 13/01</div>
+          <div class="list-item-sub-title">
+            <span>Toast Roquefort</span>
+            <span class="dots">&bull; &bull; &bull;</span>
+            <span>Penne met Kip en Prei</span>
+          </div>
+        </div>
+
+        <div class="list-item">
+          <div class="list-item-title">Vrijdag 14/01</div>
+          <div class="list-item-sub-title">
+            <span>Verrassing van de Chef</span>
+            <span class="dots">&bull; &bull; &bull;</span>
+            <span>Penne met Kip en Prei</span>
+          </div>
+        </div>
+
+        <div class="list-item">
+          <div class="list-item-title">Vrijdag 15/01</div>
+          <div class="list-item-sub-title">
+            <span>Verrassing van de Chef</span>
+            <span class="dots">&bull; &bull; &bull;</span>
+            <span>Penne met Kip en Prei</span>
+          </div>
+        </div>
+
+        <div class="list-item">
+          <div class="list-item-title">Vrijdag 16/01</div>
+          <div class="list-item-sub-title">
+            <span>Verrassing van de Chef</span>
+            <span class="dots">&bull; &bull; &bull;</span>
+            <span>Penne met Kip en Prei</span>
+          </div>
+        </div>
+
+      </div>
+      <div class="left-img"></div>
+    </div>
+  </div>
+
+  <div class="links">
+    <a href="./page2.html" class="link" >Страница 2</a>
+    <a href="./page3.html" class="link">Страница 3</a>
+  </div>
+
+</body>
+
+  <script>
+    function showMenu() {console.log('!!! showMenu');
+      let menu = document.getElementById('menu');
+      if(menu) {
+        menu.classList.add("menu-show");
+      }
+      event.stopPropagation();
+    }
+    function hideMenu(event) {
+      let menu = document.getElementById('menu');
+      if(menu) {
+        menu.classList.remove("menu-show");
+      }
+      event.stopPropagation();
+    }
+
+  </script>
+
+  <script src="index.js"></script>
+
+</html>
